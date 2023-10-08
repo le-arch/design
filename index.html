@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="4/w3.css">
+    <title>Dolly Hostel</title>
+    <style>
+        body, h1, h2, h3, h4, h5, h6{
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+       .map{
+            width: 100%;
+            height: 500px;
+        }
+    button{
+      border-radius: 5px;
+    }
+    .image{
+      width: 100px;
+      height: 500px;
+    }
+        img{
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body class="w3-light-blue">
+    <!--navigation bar-->
+    <div class="w3-bar w3-white w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-blue w3-mobile">
+            <i class="fa fa-bed w3-margin-right"></i>Hostel Logo
+        </a>
+        <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Rooms</a>
+        <a href="#about" class="w3-bar-item w3-button w3-mobile">About Us</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-right w3-gray w3-mobile">Book Now</a>
+    </div>
+    <!--header-->
+    <header class="w3-display-container w3-content" style="max-width: 1300px;">
+        <img class="w3-image" src="images/1692303752299.jpg" alt="the hotel" style="width: 100%;" >
+        <div class="w3-display-left w3-padding w3-col l6 m8">
+            <div class="w3-container w3-amber">
+                <h2><i class="fa fa-bed w3-margin-right w3-text-red"></i>Hotel Name</h2>
+            </div>
+            <div class="w3-container w3-white w3-padding-16">
+                <form action="#" target="_blank">
+                    <div class="w3-row-padding" style="margin: 0 -16px;">
+                        <div>
+                            <label><i class="fa fa-calendar w3-text-blue"></i>  Check In</label>
+                            <input class="w3-border" type="text" placeholder="Day Month Year" name="CheckIn" required>
+                        </div> <br>
+                        <div>
+                            <label><i class="fa fa-calendar w3-text-blue"></i>  Check Out</label>
+                            <input class="w3-border" type="text" placeholder="Day Month Year" name="CheckOut" required>
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="w3-row-padding" style="margin: 8px -16px;">
+                        <div class="w3-half w3-margin-bottom">
+                            <label><i class="fa fa-male"></i>  Adults</label>
+                            <input class="w3-border" type="number" value="1" name="Adults" min="1" max="7">
+                        </div>
+                        <div class="w3-half w3-margin-bottom">
+                            <label><i class="fa fa-child"></i>  Kids</label>
+                            <input class="w3-border" type="number" value="0" name="Kids" min="0" max="8">
+                        </div>
+                    </div>
+                    <button class="w3-dark-grey w3-border w3-button" type="submit">
+                        <i class="fa fa-search w3-margin-right"></i>Search availability
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!--content of the page-->
+    <div class="w3-content" style="max-width: 1500px;">
+        <div class="w3-container w3-margin-top" id="rooms">
+            <h3 class="w3-text-amber w3-center">Rooms</h3>
+            <p>Make yourself at home is our slogan. We offer the best rooms, living rooms and 
+               kitchens. Make yourself comfortable and stay well. 
+            </p>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-col m3">
+              <label><i class="fa fa-calendar w3-text-blue"></i> Check In</label>
+              <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+            </div>
+            <div class="w3-col m3">
+              <label><i class="fa fa-calendar w3-text-blue"></i> Check Out</label>
+              <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+            </div>
+            <div class="w3-col m2">
+              <label><i class="fa fa-male"></i> Adults</label>
+              <input class="w3-input w3-border" type="number" placeholder="1">
+            </div>
+            <div class="w3-col m2">
+              <label><i class="fa fa-child"></i> Kids</label>
+              <input class="w3-input w3-border" type="number" placeholder="0">
+            </div>
+            <div class="w3-col m2">
+              <label><i class="fa fa-search w3-text-gray"></i> Search</label>
+              <button class="w3-button w3-block w3-black">Search</button>
+            </div>
+          </div> 
+    </div>
+    <div class="w3-row-padding w3-padding-16">
+        <div class="w3-third w3-margin-bottom">
+            <img src="images/1691196684510.jpg" alt="photo" >
+        <div class="w3-container w3-white">
+            <h3>Single Apartment</h3>
+            <h6 class="w3-opacity">From 350,000FCFA</h6>
+            <p>Room, Kitchen, Bathroom</p>
+            <p>15m<sup>2</sup></p>
+            <p class="w3-large"><i class="fa fa-bath w3-text-gray"></i>    <i class="fa fa-phone"></i>    <i class="fa fa-wifi w3-text-teal"></i></p>
+            <button class="w3-button w3-block w3-amber w3-margin-bottom">Choose Room</button>
+        </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+        <img src="images/1692303751503.jpg" alt="photo" >
+        <div class="w3-container w3-white">
+          <h3>Double Apartment</h3>
+          <h6 class="w3-opacity">From 400,000FCFA</h6>
+          <p>Queen-size bed, kitchen, Bathroom</p>
+          <p>25m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath w3-text-gray"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi w3-text-teal"></i> <i class="fa fa-tv w3-text-blue-gray"></i></p>
+          <button class="w3-button w3-block w3-amber w3-margin-bottom">Choose Room</button>
+        </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+        <img src="images/FB_IMG_16922873162258457.jpg" alt="photo" >
+        <div class="w3-container w3-white">
+          <h3>Deluxe Room</h3>
+          <h6 class="w3-opacity">From 500,000FCFA</h6>
+          <p>King-size bed, Modern Kitchen, Bathroom</p>
+          <p>40m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath w3-text-gray"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi w3-text-teal"></i> <i class="fa fa-tv w3-text-blue-gray"></i>  <i class="fa fa-cutlery"></i></p>
+          <button class="w3-button w3-block w3-amber w3-margin-bottom">Choose Room</button>
+        </div>
+    </div>
+    </div>
+    <div class="w3-row-padding" id="about">
+        <div class="w3-col l4 12">
+          <h3 class="w3-text-amber">About</h3>
+          <h6>Our hotel is one of a kind. It is truly amazing. We welcome our honoured guest to rent our hostels.
+            Also, we provide the best services you could ever ask for. Water supply, electricity supply and delivery
+            24/7.
+          </h6>
+        <p>We accept: <i class="fa fa-credit-card w3-large w3-text-green"></i> <span class="w3-text-green">Credit card payment </span> </p>
+        </div>
+        <div class="w3-col l8 12">
+          <!-- Image of location/map -->
+          <img class="map" src="images/-5891165353411723028_121.jpg" class="w3-image w3-greyscale" >
+        </div>
+      </div>
+      
+      <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
+        <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> 237, Buea Town, Cameroon</div>
+        <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: +237652802025</div>
+        <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: basilleonora@mail.com</div>
+      </div>
+    
+      <div class="w3-panel w3-amber w3-leftbar w3-padding-32">
+        <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> On demand, we can offer playstation, food delivery, children care, dog equipment, etc.</h6>
+      </div>
+    
+      <div class="w3-container">
+        <h3>Our Hostels</h3>
+        <h6>You can find our hotels anywhere in Cameroon:</h6>
+      <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
+        <div class="">
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom">
+              <div class="w3-display-container">
+                <img src="images/-5926869953414282821_121.jpg" alt="photo" style="width:100%">
+                <span class="w3-display-bottomleft w3-padding">Buea</span>
+              </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container">
+                  <img src="images/1691196684510.jpg" alt="photo" style="width:100%">
+                  <span class="w3-display-bottomleft w3-padding">Molyko</span>
+                </div>
+              </div>
+            <div class="w3-third w3-margin-bottom">
+              <div class="w3-display-container">
+                <img src="images/FB_IMG_16911494488066948.jpg" alt="photo" style="width:100%">
+                <span class="w3-display-bottomleft w3-padding">Limbe</span>
+              </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container">
+                  <img src="images/1692303751256.jpg" alt="photo" style="width:100%">
+                  <span class="w3-display-bottomleft w3-padding">South</span>
+                </div>
+              </div>
+            <div class="w3-third w3-margin-bottom">
+              <div class="w3-display-container">
+                <img src="images/1692303751738.jpg" alt="phot" style="width:100%">
+                <span class="w3-display-bottomleft w3-padding">Tiko</span>
+              </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+              <div class="w3-display-container">
+                <img src="images/IMG-20230119-WA0045.jpg" alt="phot" style="width:100%">
+                <span class="w3-display-bottomleft w3-padding">Malingo</span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="w3-container w3-padding-32 w3-black w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;">
+        <h2>Get the best offers first!</h2>
+        <p>Join our newsletter.</p>
+        <label>E-mail</label>
+        <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+        <button type="button" class="w3-button w3-blue w3-margin-top">Subscribe</button>
+      </div>
+    
+      <div class="w3-container" id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions, do not
+     hesitate to ask them.</p>
+        <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Buea, Cameroon<br>
+        <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +237652802025<br>
+        <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: bluetechnology.com<br>
+        <form action="#" target="_blank">
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="Email"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+          <p><button class="w3-button w3-amber w3-padding-large" type="submit">SEND MESSAGE</button></p>
+        </form>
+      </div>
+    <!-- End page content -->
+</div>
+
+      <!-- Footer -->
+<footer class="w3-padding-32 w3-gray w3-center w3-margin-top">
+    <h5>Find Us On</h5>
+    <div class="w3-xlarge w3-padding-16">
+      <i class="fab fa-facebook w3-hover-opacity w3-text-blue"></i>
+      <i class="fab fa-instagram w3-hover-opacity w3-text-red"></i>
+      <i class="fab fa-snapchat w3-hover-opacity w3-text-yellow"></i>
+      <i class="fab fa-pinterest-p w3-hover-opacity w3-text-red"></i>
+      <i class="fab fa-twitter w3-hover-opacity w3-text-light-blue"></i>
+      <i class="fab fa-linkedin w3-hover-opacity w3-text-blue"></i>
+    </div>
+    <p>Sponsored by <a href="#" target="_blank" class="w3-hover-text-green">Blue technology</a></p>
+  </footer>
+    <script src="./fontawesome/js/all.min.js"></script>
+</body>
+</html>
